@@ -3,7 +3,7 @@
   - This feature needs to be easily added to an article.
   - The “Like” button serves two primary use cases:
     - When a user visits an article, a like button is rendered and displays the total number of likes
-    -When a user clicks the like button, the count increments by one.
+    - When a user clicks the like button, the count increments by one.
   - How would the client-side, server-side + database be strucutured?
 
 ## Bonus challenge
