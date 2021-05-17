@@ -1,0 +1,23 @@
+﻿body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #385596;
+}
+
+.like {
+    background-image: url(http://pluspng.com/img-png/facebook-like-png-file-facebook-like-thumb-png-2000.png);
+    background-color: #e7e9f1;
+    color: #385596;
+    background-size: 45px;
+    background-position: 20px 50%;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 59px;
+    font-size: 20px;
+    border: 1px solid #a8b4c9;
+    text-align: center;
+    text-indent: 32px;
+    border-radius: 6px;
+}
