@@ -1,0 +1,43 @@
+﻿@model LikeButton.Models.Classes.Like
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Like</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.article_like)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.article_like)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.like_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.like_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.like_user)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.like_user)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.article_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
