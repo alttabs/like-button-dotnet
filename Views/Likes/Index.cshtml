@@ -5,38 +5,28 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
-
+<h2>Likes in Articles</h2>
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create New Article", "Create")
 </p>
+
 <table class="table">
-    @*<tr>
-        <th>
-            @Html.DisplayNameFor(model => model.article_like)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.like_date)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.like_user)
-        </th>
-        <th></th>
-    </tr>*@
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.article_like) for  @Html.DisplayFor(modelItem => item.like_user)
-            at  @Html.DisplayFor(modelItem => item.like_date)
-            @Html.ActionLink("LikePost", "LikePost", new { id = item.article_id })
-
-        </td>
-        <!--<td>-->
-            @*@Html.ActionLink("Edit", "Edit", new { id=item.article_id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.article_id }) |*@
-        <!--</td>-->
-    </tr>
-}
-
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.ActionLink("Article ", "Article", new { id = item.article_id })
+                id @Html.DisplayFor(modelItem => item.article_id), create by @Html.DisplayFor(modelItem => item.like_user)
+                at @Html.DisplayFor(modelItem => item.like_date)
+                <p>
+                    <button class="like">
+                        @Html.DisplayFor(modelItem => item.article_like)
+                        @Html.ActionLink("Likes", "LikePost", new { id = item.article_id })
+                    </button>
+                </p>
+            </td>
+        </tr>
+    }
 </table>
+
+
