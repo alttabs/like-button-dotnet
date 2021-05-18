@@ -1,4 +1,7 @@
+ <img height="160em" src="https://conteudo.precocerto.co/wp-content/uploads/2015/05/roquecontente.png">
+
 #  Like Feature
+
    Like button feature: 
   - Easily added to an article.
   - Use cases:
@@ -7,7 +10,8 @@
 
 ## Stack
  ![C#](https://img.shields.io/badge/-Csharp-333333?style=flat&logo=C%2B%2B&logoColor=00599C)
-  Razor Pages with Entity Framework on ASP.NET
+  : Razor Pages with Entity Framework on ASP.NET
+
 
 ## How to run in your machine
 - Clone the repo
