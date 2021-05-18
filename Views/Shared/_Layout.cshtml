@@ -9,10 +9,32 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
+    <header class="head">
+        <nav class="navbar static-top">
+            <div class="container navbar-header">
+                <a class="navbar-brand">
+                    <img src="https://conteudo.precocerto.co/wp-content/uploads/2015/05/roquecontente.png" width="30" alt="">
+                </a>
+                <div class="navbar">
+                    <ul class="navbar-brand">
+                        <p class="nav-link">
+                            Rock Content
+                        </p>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <div class="container body-content">
+
         @RenderBody()
         <hr />
-        <footer>
+        <footer class="panel-footer">
+            <div class="text-center">
+                Made with 🖤 by
+                <a href="https://altthabs.com/">  Thabata Almeida</a>
+            </div>
         </footer>
     </div>
 
