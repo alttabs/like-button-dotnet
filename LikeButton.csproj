@@ -143,6 +143,10 @@
     <Compile Include="Migrations\202105170037207_last.Designer.cs">
       <DependentUpon>202105170037207_last.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202105171318181_initial.cs" />
+    <Compile Include="Migrations\202105171318181_initial.Designer.cs">
+      <DependentUpon>202105171318181_initial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\Classes\Like.cs" />
@@ -181,12 +185,9 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Likes\Create.cshtml" />
-    <Content Include="Views\Likes\Delete.cshtml" />
-    <Content Include="Views\Likes\Details.cshtml" />
-    <Content Include="Views\Likes\Edit.cshtml" />
     <Content Include="Views\Likes\Index.cshtml" />
+    <Content Include="Views\Likes\Article.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -211,6 +212,9 @@
     <EmbeddedResource Include="Migrations\202105170037207_last.resx">
       <DependentUpon>202105170037207_last.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105171318181_initial.resx">
+      <DependentUpon>202105171318181_initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -226,16 +230,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
-          <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>50438</DevelopmentServerPort>
-          <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44317/</IISUrl>
-          <NTLMAuthentication>False</NTLMAuthentication>
-          <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
-          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
     </VisualStudio>
